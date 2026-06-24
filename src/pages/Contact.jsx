@@ -38,21 +38,35 @@ export default function Contact() {
             Tell us a little about yourself, your experience level, and what
             interests you about steel fighting.
           </p>
-          <form class="flex flex-col gap-md">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/"
+            class="flex flex-col gap-md"
+          >
             <div class="flex flex-col gap-sm text-xs items-start py-sm">
               <label name="name">
-                Name: <input type="text" name="name" class="bg-ash w-full" />
+                Name:{" "}
+                <input type="text" name="name" class="bg-ash w-full" required />
               </label>
-              <label name="name">
-                Email: <input type="email" name="name" class="bg-ash w-full" />
+              <label name="email">
+                Email:{" "}
+                <input
+                  type="email"
+                  name="email"
+                  class="bg-ash w-full"
+                  required
+                />
               </label>
-              <label name="name">
-                Phone: <input type="tel" name="name" class="bg-ash w-full" />
+              <label name="phone">
+                Phone:{" "}
+                <input type="tel" name="phone" class="bg-ash w-full" required />
               </label>
             </div>
-            <label name="name">
+            <label name="message">
               Message:
-              <textarea type="text" name="name" class="bg-ash w-full" />
+              <textarea type="text" name="message" class="bg-ash w-full" />
             </label>
           </form>
         </div>
