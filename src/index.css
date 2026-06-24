@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect reduced motion — always do this */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@theme {
+  /* ── Backgrounds ── */
+  --color-iron-void: #0d0c0e;
+  --color-crypt: #151418;
+  --color-obsidian: #1e1d22;
+  --color-rampart: #2a2a2e;
+
+  /* ── Text ── */
+  --color-bone: #e8e4dc;
+  --color-ash: #c8c3b8;
+  --color-flint: #888892;
+  --color-slate: #5a5a62;
+
+  /* ── Accent ── */
+  --color-blood-iron: #8b1a1a;
+  --color-ember-dark: #1a0808;
+
+  /* ── Fonts ── */
+  --font-display: "IM Fell English", serif;
+  --font-body: "Crimson Pro", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* ── Type Scale ── */
+  --text-hero: 2.5rem;
+  --text-section: 1.875rem;
+  --text-card: 1.25rem;
+  --text-body: 1rem;
+  --text-muted: 0.875rem;
+  --text-label: 0.75rem;
+
+  /* ── Spacing ── */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+
+  /* ── Radius (angular by default) ── */
+  --radius-none: 0px;
+  --radius-sm: 2px;
+  --radius: 0px;
+
+  /* ── Breakpoints (mobile-first) ── */
+  --breakpoint-sm: 390px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+@layer components {
+  .page-layout {
+    /* class="flex flex-col min-h-screen p-2 border-2 gap-sm" */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
+  }
+
+  .section-header {
+    font-family: var(--font-display);
+    font-size: var(--text-section);
+    color: var(--color-bone);
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .text-bubble {
+    text-align: justify;
+    background: var(--color-crypt);
+    border: 0.5px solid var(--color-rampart);
+    color: var(--color-ash);
+    font-family: var(--font-card);
+    font-size: var(--text-body);
+    padding: var(--spacing-md);
+  }
+
+  .stat-card {
+    background: var(--color-iron-void);
+    border-left: 2px solid var(--color-blood-iron);
+    padding: var(--spacing-md);
+    font-family: var(--font-mono);
+  }
+
+  .btn {
+    font-family: var(--font-mono);
+    font-size: var(--text-label);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 0.5px solid var(--color-flint);
+    color: var(--color-ash);
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .btn-primary {
+    border: 1px solid var(--color-flint);
+    color: var(--color-bone);
+    border-radius: var(--spacing-sm);
+  }
+}
