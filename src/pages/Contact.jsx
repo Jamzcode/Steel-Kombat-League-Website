@@ -25,8 +25,7 @@ export default function Contact() {
               Phone: <b>(210) 725-0718</b>
             </div>
             <div>
-              Location:
-              <b>5345 Glen Ridge Dr.</b>
+              Location: <b>5345 Glen Ridge Dr.</b>
               <b>San Antonio, Texas 78229</b>
             </div>
           </div>
@@ -45,29 +44,49 @@ export default function Contact() {
             action="/"
             class="flex flex-col gap-md"
           >
-            <div class="flex flex-col gap-sm text-xs items-start py-sm">
+            <div class="flex flex-col gap-sm text-xs items-start py-sm ">
               <label name="name">
                 Name:{" "}
-                <input type="text" name="name" class="bg-ash w-full" required />
+                <input
+                  type="text"
+                  name="name"
+                  class="bg-ash w-full px-sm text-iron-void"
+                  required
+                />
               </label>
               <label name="email">
                 Email:{" "}
                 <input
                   type="email"
                   name="email"
-                  class="bg-ash w-full"
+                  class="bg-ash w-full px-sm  text-iron-void"
                   required
                 />
               </label>
               <label name="phone">
                 Phone:{" "}
-                <input type="tel" name="phone" class="bg-ash w-full" required />
+                <input
+                  type="tel"
+                  name="phone"
+                  class="bg-ash w-full px-sm  text-iron-void"
+                  required
+                />
               </label>
             </div>
             <label name="message">
               Message:
-              <textarea type="text" name="message" class="bg-ash w-full" />
+              <textarea
+                type="text"
+                name="message"
+                class="bg-ash w-full text-iron-void"
+              />
             </label>
+            <button
+              class="btn btn-primary w-full text-center transition-transform duration-150 ease-out
+  active:scale-95 active:opacity-80"
+            >
+              Send
+            </button>
           </form>
         </div>
         <div class="text-bubble ">
