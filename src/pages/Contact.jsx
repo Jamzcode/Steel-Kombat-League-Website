@@ -82,6 +82,7 @@ export default function Contact() {
               />
             </label>
             <button
+              type="submit"
               class="btn btn-primary w-full text-center transition-transform duration-150 ease-out
   active:scale-95 active:opacity-80"
             >
