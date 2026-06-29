@@ -44,6 +44,7 @@ export default function Contact() {
             action="/"
             class="flex flex-col gap-md"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div class="flex flex-col gap-sm text-xs items-start py-sm ">
               <label name="name">
                 Name:{" "}
