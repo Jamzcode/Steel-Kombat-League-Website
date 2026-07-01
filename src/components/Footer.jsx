@@ -39,7 +39,7 @@ export default function Footer() {
 
       <div>
         <p className="text-center text-slate font-mono text-label mt-lg tracking-widest uppercase ">
-          © 2025 Steel Combat
+          © 2025 Steel Kombat League
         </p>
       </div>
     </div>

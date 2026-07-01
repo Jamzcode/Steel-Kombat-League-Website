@@ -16,7 +16,7 @@ export default function Contact() {
             Have questions about equipment? Curious about steel fighting? We'd
             love to hear from you!
           </p>
-          <div class="bg-ember-dark border-blood-iron border-[0.5px] rounded-sm p-md">
+          <div class="bg-ember-dark border-blood-iron border-[0.5px] rounded-sm p-md ">
             <h3 class="text-card text-center">Contact Information</h3>
             <div>
               Email: <b>sanantoniolegion@gmail.com</b>

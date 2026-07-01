@@ -48,7 +48,7 @@ export default function About() {
           </p>
         </div>
         {/* Create separate training schedule page? */}
-        <div class="text-bubble ">
+        <div class="text-bubble bg-ember-dark border-blood-iron border-[0.5px] rounded-sm">
           <h3 class="section-header">Training Schedule</h3>
           <h3 class="uppercase">
             <b>Training Days:</b>
