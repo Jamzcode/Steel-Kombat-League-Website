@@ -6,7 +6,7 @@ import pic1 from "../assets/full-armor.jpg";
 export default function Contact() {
   return (
     <PageTransition>
-      <div class="page-layout ">
+      <div class="page-layout">
         <div class="text-bubble">
           <h3 class="section-header">Get In Touch</h3>
           <div>

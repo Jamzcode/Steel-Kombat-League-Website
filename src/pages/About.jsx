@@ -1,29 +1,31 @@
 import Image from "../components/Image";
 import PageTransition from "../components/PageTransition";
 
-import pic1 from "../assets/equipment.jpg";
+import pic1 from "../assets/headshot.jpeg";
 
 export default function About() {
   return (
     <PageTransition>
       <div class="page-layout">
-        <Image src={pic1} />
+        <Image src={pic1} size="w-120 h-120"/>
         <div class="text-bubble ">
           <h3 class="section-header">About Us</h3>
           {/* <p>Built by a Local Fighter </p> */}
 
           <p>
-            Founded by a San Antonio native with a passion for steel combat, our
-            club was created to give local fighters a place to learn, train, and
-            grow together. Our coach has been a dedicated steel fighting
-            enthusiast for years and brings a fighter's mindset to every
-            training session. Alongside a love for armored combat, he has spent
-            the last three years training Muay Thai, developing a style that
+            Founded by a San Antonio native and steel enthusiast, our club was
+            created to give local fighters a place to learn, train, and grow
+            together. Coach John has been a dedicated steel fighting enthusiast
+            for years and brings a fighter's mindset to every training session.
+            Alongside a love for armored combat, John has spent the last three
+            years training in Muay Thai, developing a fusion style that
             emphasizes movement, pressure, timing, conditioning, and powerful
-            striking mechanics.{" "}
+            striking mechanics into the steel fighting arena.{" "}
             <span class="text-blood-iron">
-              The result is a training environment that blends the excitement of
-              steel fighting with proven martial arts principles.
+              <b>
+                The result is a fighting style that blends the excitement of
+                steel fighting with proven Muay Thai martial arts principles.
+              </b>
             </span>
           </p>
         </div>
@@ -48,15 +50,60 @@ export default function About() {
         {/* Create separate training schedule page? */}
         <div class="text-bubble ">
           <h3 class="section-header">Training Schedule</h3>
+          <h3 class="uppercase">
+            <b>Training Days:</b>
+          </h3>
+          <ul>
+            <li>
+              Monday 7-8pm <i>soft kit training</i>
+            </li>
+            <li>
+              Tuesday 7-8pm <i>steel Muay Thai</i>
+            </li>
+            <li>
+              Wednesday 7-8pm <i>steel Muay Thai</i>
+            </li>
+            <li>
+              Thursday 6-8pm{" "}
+              <i>
+                Steel-on-Steel fighting Applied combat training, sparring
+                drills, scenario work, and team development.
+              </i>
+            </li>
+          </ul>
+          <br />
+
+          <h3 class="uppercase">
+            <b>Training Class structure 60 minutes:</b>
+          </h3>
+          <ul>
+            <li> Warmup (Muay Thai, jog, lunges, etc.) bag warmup</li>
+            <li>
+              {" "}
+              Technique 1, 1st round, <i>break</i>
+            </li>{" "}
+            <li>
+              {" "}
+              Technique 2, 2nd round, <i>break</i>
+            </li>{" "}
+            <li>
+              {" "}
+              Technique 3, 3rd round, <i>break</i>
+            </li>{" "}
+            <li> Sparring (3 rounds, 4mins each, breaks. 20 minutes)</li>
+            <li> Closing and shut down</li>
+          </ul>
+          <br />
           <p>
-            Weekly Training Sessions Monday 7:00 PM - 9:00 PM Technical
-            instruction, footwork, striking drills, partner work, and
-            conditioning. Friday 7:00 PM - 9:00 PM Applied combat training,
-            sparring drills, scenario work, and team development. What to Expect
-            Every session focuses on: Fundamentals and safety Movement and
-            footwork Muay Thai-inspired striking mechanics Steel weapon handling
-            Conditioning and endurance Controlled sparring and skill development
-            New members are always welcome.
+            <i>
+              Every training session focuses on fundamentals, safety movements, footwork,
+              Muay Thai-inspired striking mechanics, steel weapon handling
+              techniques, endurance training, and skills development.
+            </i>
+          </p>
+          <br />
+          <p class="uppercase">
+            <b>New members are always welcome!</b>
           </p>
         </div>
         <div class="text-bubble ">
