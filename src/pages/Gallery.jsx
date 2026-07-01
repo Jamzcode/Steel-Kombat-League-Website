@@ -18,17 +18,16 @@ export default function Gallery() {
         <p class="text-center">Community Outreach, 2025</p>
         <Image src={pic3} />
         <Image src={pic4} />
-         <div class="flex justify-center py-lg">
-            <a
-              href="/"
-              class="btn btn-primary w-full text-center transition-transform duration-150 ease-out
+        <div class="flex justify-center py-lg">
+          <a
+            href="/"
+            class="btn btn-primary w-full text-center transition-transform duration-150 ease-out
   active:scale-95 active:opacity-80"
-            >
-              Back to Home
-            </a>
-          </div>
+          >
+            Back to Home
+          </a>
+        </div>
       </div>
-      
     </PageTransition>
   );
 }
